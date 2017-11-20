@@ -12,9 +12,9 @@
 
 ## Arrays
 
-If you want to store a **bunch of things**, a **collection** or a **list** of things,  identifiers like `name1`, `name2`, `name3` and so on quickly become tiresome. **Arrays** are to the rescue!
+If you want to store a **bunch of things**, a **collection** or a **list** of things,  identifiers like `name1`, `name2`, `name3` and so on quickly become tiresome. **Arrays** to the rescue!
 
-Imagine an array like a list or a collection of variables, but instead of each variable having its own name, only the array has a name. So how do you access a variable inside, then? How do you read and write? Using an *index*!
+Imagine an array like a list or a collection of variables, but instead of each variable having its own name, only the array has a name. So how do you access a variable inside, then? How do you read and update it? Using an *index*!
 
 An index is just a whole number, such as `0`, `1`, `2` and so forth. As in many areas of computing, indices in JavaScript arrays start with `0` --- so `0` is the index of the first element of an Array, `1` is the index of the second element, and so forth.
 
@@ -48,7 +48,7 @@ console.log(animals[1]);
 
 > Take a guess at which animal that will print out, and see if you're right.
 
-Spoiler alert, it will print out "puppy". That might seem weird, until you learn that JavaScript is a "0-index" language. What that means is that counting in JavaScript starts at 0. So `animals[0]`will print out "tiger". We don't make the rules...
+Spoiler alert, it will print out "puppy". That might seem weird, until you learn that JavaScript is a "0-index" language. What that means is that counting in JavaScript starts at 0. So `animals[0]` will print out "tiger".
 
 > **Exercise:** 
 >
@@ -72,7 +72,7 @@ The syntax looks like this:
 }
 ```
 
-The names on the left ("property1") are known "keys". Any values can be given to them: strings, booleans, integers.
+The names on the left (e.g. `property1`) are known "keys". Any values can be given to them: strings, booleans, integers.
 
 ### Try it out
 
@@ -113,7 +113,7 @@ console.log(person.firstName);
 
 ### Concatenating two arrays
 
-You've learned how you can add two numbers and append two strings, but how does this work for arrays? A simple `arr1 + arr2` will not do, but there is a method you can use: `concat()`. It is a method that you call on the array (similar to how `console.log` is the `log` function called on `console`) and takes the array you want to append as a parameter.
+You've learned how you can add two numbers and append two strings, but how does this work for arrays? A simple `arr1 + arr2` will not work, but there is a method you can use: `concat()`. It is a method that you call on the array (similar to how `console.log` is the `log` function called on `console`) and takes the array you want to append as a parameter.
 
 ```js
 var countries = ['Scotland', 'Germany', 'Syria'];

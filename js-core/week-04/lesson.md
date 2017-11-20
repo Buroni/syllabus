@@ -41,8 +41,8 @@ Let's open the file **main.js** and investigate its contents
 
 > **Exercises**
 > - What do you notice about the code? Anything you don't understand? Notice the semicolon, the dot, the parantheses - these are all elements of JavaScript 
+
 > **Syntax**
->
 > - Try to `console.log()` something different, for example, `Hello World. I just started learning JavaScript!`. (run `node main.js` after each change and look at the output in the console)
 > - Try to `console.log()` several things at once.
 > - What happens when you get rid of the quote marks?
@@ -239,33 +239,27 @@ Coding is great because it makes it easy to automate boring tasks, like writing 
 A for loop has the following syntax:
 
 ```js
-
 for (statement 1; statement 2; statement 3) {
   // code to be executed
 }
-
 ```
 
 **Statement 1** defines a variable for the loop and assigns it a starting value. It is usually a number, which will increase each time the loop completes an iteration. We can use this number inside the loop to keep track of where we're at. You can set the number to be whatever you want initially.
 
 ```js
-
-var i=0
-
+var i = 0;
 ```
 
 **Statement 2** defines how long the loop will go on for (what needs to happen for the loop to stop running?). It most often uses the less than (`<`) or less than or equal to (`<=`) operators to set the length.
 
 ```js
-
 i < 10
-
 ```
 
 **Statement 3** defines by how much to increment the `i` variable each time the loop completes an iteration. If you just want it to increase by one, then put `i++`, or else you can increase by other numbers like so:
 
 ```js
-i+=2
+i += 2
 ```
 
 Inside the square brackets goes the code you wish to be executed each time the loop runs. You can refer to the variable `i` from inside the loop.
@@ -275,8 +269,7 @@ Inside the square brackets goes the code you wish to be executed each time the l
 Here's an example of an actual for loop that prints out the numbers 1 to 10:
 
 ```js
-
-for (var i=1; i <= 10; i++) {
+for (var i = 1; i <= 10; i++) {
   console.log(i);
 }
 
@@ -291,7 +284,7 @@ Notice the variable `i` is set to `1`, because we want counting to begin there. 
 >
 > **Exercise**
 >
-> Write a for loop that prints out all the numbers between 1 and 100 divisble by 5. 
+> Write a for loop that prints out all the numbers between 1 and 100 divisible by 5. 
 >
 > See if you can think or more than one way to solve this.
 >
@@ -308,11 +301,9 @@ A function is a block of code designed to perform a particular task. A function 
 The syntax of a function looks like this:
 
 ```js
-
 function functionName (parameters) {
   // code to be executed
 }
-
 ```
 
 You can call a function whatever you want, just like a variable. You can also give a function different values every time you run it which are called "parameters".
@@ -320,9 +311,7 @@ You can call a function whatever you want, just like a variable. You can also gi
 To make the function run, we invoke it like so:
 
 ```js
-
 functionName();
-
 ```
 
 ### Try it out
@@ -330,26 +319,23 @@ functionName();
 Let's write a function that adds two numbers together. We'll call it `add`. We want to add together two different numbers every time, so let's define two parameters to represent this, `x` and `y`.
 
 ```js
-
 function add (x, y) {
   // code to be executed
 }
 
 add(2, 3);
-
 ```
 
-Notice I've invoked the function underneath, with the paremeters `2` and `3`. Inside the function, try to `console.log()` your parameters and see what happens.
+Notice I've invoked the function underneath, with the parameters `2` and `3`. Inside the function, try to `console.log()` your parameters and see what happens.
 
 Now, we want to add these two numbers together, but it isn't enough just to write `x + y`, since we haven't told the function to return anything. It's time for a `return` statement. The `return` statement specifies the value to output.
 
 ```js
-
 function add (x, y) {
   return x + y;
 }
-add(2, 3);
 
+add(2, 3);
 ```
 
 Run this code, and hopefully you get the right answer!
